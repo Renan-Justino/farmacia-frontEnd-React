@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles and sensible defaults */
+:root {
+  --color-primary: #1e3a8a;        /* DPSP Dark Blue */
+  --color-primary-dark: #1f2937;   /* DPSP Dark Gray */
+  --color-primary-light: #60a5fa;   /* DPSP Light Blue */
+  --color-accent: #dc2626;          /* DPSP Red */
+  --color-background: #f9fafb;     /* Light gray background */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Components layer */
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-gray-200 p-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg 
+           bg-dpsp-dark-blue text-white font-medium 
+           hover:bg-dpsp-dark-blue/90 
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dpsp-dark-blue
+           transition-colors duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg 
+           bg-white text-gray-700 font-medium border border-gray-300
+           hover:bg-gray-50 
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500
+           transition-colors duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-3 py-2 rounded-lg 
+           bg-transparent text-gray-600 font-medium
+           hover:bg-gray-100 hover:text-gray-900
+           focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500
+           transition-colors duration-200;
+  }
+
+  .input {
+    @apply w-full px-4 py-2.5 rounded-lg border border-gray-300 
+           bg-white text-gray-900 placeholder-gray-400
+           focus:outline-none focus:ring-2 focus:ring-dpsp-dark-blue focus:border-transparent
+           transition-all duration-200
+           disabled:bg-gray-50 disabled:text-gray-500 disabled:cursor-not-allowed;
+  }
+
+  .label {
+    @apply block text-sm font-medium text-gray-700 mb-1.5;
+  }
+}

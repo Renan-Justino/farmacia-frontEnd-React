@@ -1,0 +1,5 @@
+{
+  "name": "PharmaSystem React",
+  "description": "Professional Pharmacy Management Frontend consuming a Spring Boot API.",
+  "requestFramePermissions": []
+}

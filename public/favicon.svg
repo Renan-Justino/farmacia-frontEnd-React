@@ -1,0 +1,18 @@
+<svg width="32" height="32" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background preto -->
+  <rect width="200" height="200" fill="#000000"/>
+  
+  <!-- GRUPO text (azul escuro) -->
+  <text x="15" y="50" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e3a8a">GRUPO</text>
+  
+  <!-- Símbolo: três formas verticais -->
+  <!-- Retângulo azul escuro -->
+  <rect x="95" y="25" width="10" height="30" fill="#1e3a8a"/>
+  <!-- Retângulo vermelho -->
+  <rect x="108" y="25" width="10" height="30" fill="#dc2626"/>
+  <!-- Seta azul claro (triângulo apontando para direita) -->
+  <polygon points="121,25 121,55 145,40" fill="#60a5fa"/>
+  
+  <!-- DPSP text (azul escuro, maior) -->
+  <text x="15" y="110" font-family="Arial, sans-serif" font-size="52" font-weight="bold" fill="#1e3a8a">DPSP</text>
+</svg>
